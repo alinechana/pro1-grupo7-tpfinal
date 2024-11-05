@@ -27,7 +27,7 @@ fetch(URL)
     cargarMas.addEventListener("click", function () {
         for (let a = 10; a < 20; a++) {
             masRecetas +=
-        `<article class="artForm">
+        `<article class="artFormCargar">
             <img class="img" src= ${recetas[a].image} alt=''>
             <h2> ${recetas[a].name} </h2>
             <h4> Dificultad: ${recetas[a].difficulty} </h4>
