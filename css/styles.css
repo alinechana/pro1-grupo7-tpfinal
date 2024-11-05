@@ -34,6 +34,9 @@ img {
     width: 95%;
 }
 
+.recetasData {
+    text-align: center;
+}
 .listaFooter {
     justify-content: space-evenly;
     list-style: none;

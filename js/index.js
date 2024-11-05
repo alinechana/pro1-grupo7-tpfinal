@@ -14,10 +14,10 @@ fetch(URL)
     for (let i = 0; i < 10; i++) {
         recipes += 
         `<article class="artRec , elementosFlex">
-            <img src= ${recetas[i].image} alt=''>
-            <h2> ${recetas[i].name} </h2>
-            <h4> Dificultad: ${recetas[i].difficulty} </h4>
-            <p><a href="./receta.html">Presione para más detalles</a> </p>
+            <img class="imagenRec" src= ${recetas[i].image} alt=''>
+            <h2 class="recetasData"> ${recetas[i].name} </h2>
+            <h3 class="recetasData"> Dificultad: ${recetas[i].difficulty} </h3>
+            <p class="recetasData"><a class= "detalle" href="./receta.html">Presione para más detalles</a> </p>
         </article>
         `
     }
@@ -29,9 +29,9 @@ fetch(URL)
             masRecetas +=
         `<article class="artFormCargar , elementosFlex">
             <img class="img" src= ${recetas[a].image} alt=''>
-            <h2> ${recetas[a].name} </h2>
-            <h4> Dificultad: ${recetas[a].difficulty} </h4>
-            <p>  <a href="./receta.html">Presione para más detalles</a> </p>
+            <h2 class="recetasData" > ${recetas[a].name} </h2>
+            <h3 class="recetasData"> Dificultad: ${recetas[a].difficulty} </h3>
+            <p class="recetasData">  <a href="./receta.html">Presione para más detalles</a> </p>
         </article>
         ` 
         }
