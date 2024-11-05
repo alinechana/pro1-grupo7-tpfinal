@@ -1,7 +1,10 @@
-.listaHeader {
+.elementosFlex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.listaHeader {
     justify-content: space-evenly;
     list-style: none;
     text-decoration: none;
@@ -18,32 +21,11 @@ ul {
     padding-inline-start: 0px;
 }
 
-.listaLogo {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
 .buscador {
     width: 30%;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.rec, .formCargar {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
 .artRec, .artFormCargar {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     width: 20%;
     justify-content: space-around;
 }
@@ -53,9 +35,6 @@ img {
 }
 
 .listaFooter {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-evenly;
     list-style: none;
 }
