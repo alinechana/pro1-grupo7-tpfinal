@@ -1,7 +1,7 @@
 const URL = "https://dummyjson.com/recipes"
 
 let rec = document.querySelector(".rec")
-let formCargar = document.querySelector(".formCargar")
+let cargarRecetas = document.querySelector(".cargarRecetas")
 let cargarMas = document.querySelector(".cargarMas")
 
 fetch(URL)
@@ -35,7 +35,7 @@ fetch(URL)
         </article>
         ` 
         }
-        formCargar.innerHTML = masRecetas
+        cargarRecetas.innerHTML = masRecetas
     })
 })
 .catch(function (error) {
