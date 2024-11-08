@@ -1,7 +1,6 @@
 const URL = "https://dummyjson.com/recipes"
 
 let rec = document.querySelector(".rec")
-let cargarRecetas = document.querySelector(".cargarRecetas")
 let cargarMas = document.querySelector(".cargarMas")
 
 fetch(URL)
@@ -27,7 +26,7 @@ fetch(URL)
     cargarMas.addEventListener("click", function () {
         for (let a = 10; a < 20; a++) {
             masRecetas +=
-        `<article class="artFormCargar , elementosFlex">
+        `<article class="artRec , elementosFlex">
             <img class="img" src= ${recetas[a].image} alt=''>
             <h2 class="recetasData" > ${recetas[a].name} </h2>
             <h3 class="recetasData"> Dificultad: ${recetas[a].difficulty} </h3>
@@ -35,7 +34,7 @@ fetch(URL)
         </article>
         ` 
         }
-        cargarRecetas.innerHTML = masRecetas
+        rec.innerHTML += masRecetas
     })
 })
 .catch(function (error) {
