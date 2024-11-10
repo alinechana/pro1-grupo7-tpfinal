@@ -10,7 +10,6 @@ login.addEventListener("submit", function() {
     }
     if (contra.length() == ""){
         alert("Por favor complete el campo contraseña");
-
     } 
 }) 
 
