@@ -4,6 +4,10 @@
     flex-direction: row;
 }
 
+body {
+    background-image: url(../img/Flipsnack.jpeg);
+    background-image: horizontal;
+}
 .logo{
     display: flex;
     flex-wrap: wrap;
@@ -59,6 +63,7 @@ ul {
     width: 17%;
     justify-content: space-around;
     border: solid, rgb(23, 157, 157);
+    background-color: white;
 }
 
 .rec {
@@ -73,7 +78,7 @@ h1{
     font-family: "Norican", cursive;
     font-weight: 400;
     font-style: normal;
-
+    color: rgb(29, 82, 82);
 }
 
 .detalleReceta {
@@ -82,9 +87,23 @@ h1{
     flex-direction: column;
 }
 
-
 .imgReceta {
     width: 30%;
+    border: solid, rgb(23, 157, 157);
+    padding: 2%;
+    background-color: white;
+}
+
+.sectionRecetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.articleRecetas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .recetasData {
@@ -106,4 +125,8 @@ h1{
     font-weight: 400;
     font-style: normal;
     padding: 8px;
+}
+
+.seccionLogin {
+    align-content: center;
 }
