@@ -16,7 +16,7 @@ fetch(URL)
             <img class="imagenRec" src= ${recetas[i].image} alt=''>
             <h2 class="recetasData"> ${recetas[i].name} </h2>
             <h3 class="recetasData"> Dificultad: ${recetas[i].difficulty} </h3>
-            <p class="recetasData"><a href="./receta.html?id=${recetas[i].id}">Presione para más información</a>
+            <p class="recetasData"><a href="./receta.html?id=${recetas[i].id}">Presione para más detalles</a>
 </p>
         </article>
         `
