@@ -9,7 +9,7 @@ register.addEventListener("submit", function(e) {
     if (email.value == "") {
         msjError.innerText = "Por favor complete el campo";
         msjError.style.color = "red"
-        
+    
     }
     else if (contra.value == "") { 
         msjError.innerText = "Por favor complete el campo";
