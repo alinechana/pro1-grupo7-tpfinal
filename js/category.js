@@ -19,6 +19,8 @@ fetch(URL)
         `<article>
             <img class = imgCat src= ${recipes[i].image} alt=''>
             <h2> ${recipes[i].name} </h2>
+            <h3> Difficulty: ${recipes[i].difficulty} </h3>
+            <p ><a href="./receta.html?id=${recipes[i].id}">Presione para más detalles</a></p>
         </article>
         `
     }

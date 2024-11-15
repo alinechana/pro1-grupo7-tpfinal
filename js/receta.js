@@ -24,7 +24,7 @@ fetch(URL)
     for (let i = 0; i < data.tags.length; i++) {
         let tag = data.tags[i];
         categorias +=
-        `<h3><a href="./categories.html?tag=${tag}">${tag}</a></h3>`
+        `<h3><a href="./category.html?tag=${tag}">${tag}</a></h3>`
     }
     tags.innerHTML += categorias
 })
