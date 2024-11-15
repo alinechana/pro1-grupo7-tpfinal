@@ -4,7 +4,7 @@ let cargarMas = document.querySelector(".cargarMas");
 
 function fetchRecetas(skip){
     let url = `https://dummyjson.com/recipes?limit=10&skip=${skip}&select=name,image`;
-
+    
     fetch(url)
     .then(function (response) {
         return response.json();
@@ -17,7 +17,6 @@ function fetchRecetas(skip){
             `<article class="artRec , elementosFlex">
                 <img class="imagenRec" src= ${recetas[i].image} alt=''>
                 <h2 class="recetasData"> ${recetas[i].name} </h2>
-                <h3 class="recetasData"> Dificultad: ${recetas[i].difficulty} </h3>
                 <p class="recetasData"><a href="./receta.html?id=${recetas[i].id}">Presione para más detalles</a></p>
             </article>
             `

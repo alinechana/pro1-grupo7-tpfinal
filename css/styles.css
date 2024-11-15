@@ -21,14 +21,31 @@ body {
 
 }
 
+li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    
+}
+
+nav{
+    justify-content: center;
+}
+
 
 header{
     background-color: rgb(29, 158, 145);
+    
 }
 
 footer {
     background-color: rgb(29, 158, 145);
 }
+
+
+
 .listaHeader {
     justify-content: space-around;
     list-style: none;
@@ -37,17 +54,19 @@ footer {
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
+    
 }
 
 .barraNav {
     text-decoration: none;
-    color: black;
+    color: white;
     width: 15%;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
     flex-direction: column;
     align-items: center;
+    width: 75px;
 }
 
 ul {
@@ -56,7 +75,7 @@ ul {
 
 .buscador {
     width: 30%;
-    margin-top: 2%;
+    
 }
 
 .artRec {
@@ -159,7 +178,15 @@ h1{
     align-items: flex-start;
     border-color: black;
     border-radius: 20px;
+    border: solid 2px;
     align-self: center;
+    width: 508px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 150, 150, 0.377);
 }
 
 .email {
@@ -171,6 +198,7 @@ h1{
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
+    width: 500px;
 
 }
 
@@ -183,9 +211,7 @@ h1{
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
-
-
-
+    width: 500px;
 }
 
 .CuentaNo{
