@@ -1,13 +1,25 @@
 let login = document.querySelector(".login");
+let email = document.querySelector(".email");
+let contra = document.querySelector(".contra");
 
-login.addEventListener("focus", function() {
-    if (this.value == " ") {
+login.addEventListener("submit", function(e) {
+    e.preventDefault()
+    if (email.value == "") {
         alert("Por favor complete el campo email")
     }
-    if (this.value == ""){
-        alert("Por favor complete el campo contraseña");
-    } 
+    else if (email.value == "") { 
+        alert("Por favor complete el campo contraseña")
+        
+    } else {
+        this.submit()
+        
+    }
+    
 }) 
+
+
+
+
 
 
 
