@@ -155,7 +155,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1043px;
+    width: 1255px;
     justify-content: center;
     height: 120px;
 
@@ -181,11 +181,55 @@ h1{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    height: 500px;
+    height: 600px;
+
+}
+
+.HijoLoginRegister{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: flex-start;
+
+
+}
+
+.HijoLoginRegister{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: flex-start;
 
 }
 
 .login {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-color: black;
+    border-radius: 20px;
+    border: solid 2px;
+    align-self: center;
+    width: 508px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 150, 150, 0.377);
+    height: 300px;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.register{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -202,9 +246,25 @@ h1{
     padding-right: 20px;
     padding-bottom: 20px;
     background-color: rgba(0, 150, 150, 0.377);
+    height: 300px;
+    align-self: center;
+
 }
 
 .email {
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 500px;
+
+}
+
+.emailLogin{
     height: 40px;
     width: 350px;
     border-radius: 10px;
@@ -221,12 +281,25 @@ h1{
     height: 40px;
     width: 350px;
     border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 500px;
+}
+
+.contraLogin{
+    height: 40px;
+    width: 350px;
+    border-radius: 10px;
     margin-bottom: 20px;
     background-color: white;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
     width: 500px;
+
 }
 
 .CuentaNo{
@@ -252,6 +325,7 @@ h1{
     flex-direction: row;
     width: 250px;
     align-items: center;
+    margin-top: 10px;
 }
 
 
@@ -277,6 +351,22 @@ h1{
     background-color: rgb(6, 151, 255);
     color: white;
     border-color:  rgb(6, 151, 255);
+    margin-bottom: 20px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+}
+
+.registerBtn{
+    width: 90px;
+    height: 30px;
+    border-radius: 7px;
+    background-color: rgb(6, 151, 255);
+    color: white;
+    border-color:  rgb(6, 151, 255);
+    margin-bottom: 10px;
+    font-family: "Alice", serif;
+    font-weight: 400;
+
 }
 
 /* Detalle */
@@ -300,6 +390,7 @@ h1{
     align-items: center;
     align-self: center;
     
+    
 }
 
 
@@ -321,6 +412,9 @@ h1{
 .instrucciones{
     align-self: center;
     text-align: center;
+
 }
+
+
 
 
