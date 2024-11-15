@@ -1,4 +1,9 @@
 let detalleReceta = document.querySelector(".detalleReceta")
+let h1 = document.querySelector("h1")
+let instrucciones = document.querySelector(".instrucciones")
+let tiempo = document.querySelector(".tiempo")
+let imgReceta = document.querySelector(".imgReceta")
+let tags = document.querySelector(".tags")
 
 let qs = location.search;
 let qsObj = new URLSearchParams(qs)
@@ -11,16 +16,17 @@ fetch(URL)
     return response.json();
 })
 .then(function (data) {
-    let h1 = document.querySelector("h1")
     h1.innerText = `${data.name}`
-    let instrucciones = document.querySelector(".instrucciones")
     instrucciones.innerText = `Instrucciones: ${data.instructions}`
-    let tiempo = document.querySelector(".tiempo")
     tiempo.innerText = `Tiempo de cocción: ${data.cookTimeMinutes} minutos`
-    let imgReceta = document.querySelector(".imgReceta")
     imgReceta.src = `${data.image}`
-    let tags = document.querySelector(".tags")
-    tags.innerText = `Categorías: ${data.tags}`
+    let categorias = ""
+    for (let i = 0; i < data.tags.length; i++) {
+        let tag = data.tags[i];
+        categorias +=
+        `<h3><a href="./category.html?tag=${tag}">${tag}</a></h3>`
+    }
+    tags.innerHTML += categorias
 })
 .catch(function (error) {
     return console.log(error);
