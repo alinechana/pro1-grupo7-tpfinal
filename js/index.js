@@ -36,3 +36,18 @@ cargarMas.addEventListener("click", function () {
     fetchRecetas(skip)
 })
 
+buscadorNav.addEventListener("focus", function(){
+
+    if (this.value.length < 3) {
+        alert("Debe ingresar una palabra mayor a 3 caracteres");
+
+    }else if (this.value == "") {
+        alert("El campo no puede estar vacío");
+
+    }else{
+        alert(this.value);
+
+    }
+
+})
+
