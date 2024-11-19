@@ -15,7 +15,7 @@ fetch(url)
     for (let i = 0; i < data.length; i++) {
         let tag = data[i]
         listaTags +=
-        `<h3><a href="./category.html?tag=${tag}">${tag}</a></h3>`
+        `<h3 class="textoCategory"><a href="./category.html?tag=${tag}">${tag}</a></h3>`
     }
     todasCategorias.innerHTML = listaTags
 

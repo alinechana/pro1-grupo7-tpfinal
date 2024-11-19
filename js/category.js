@@ -16,11 +16,11 @@ fetch(URL)
 
     for (let i = 0; i < recipes.length; i++) {
         agregarTags += 
-        `<article>
+        `<article class="articleCategory">
             <img class = imgCat src= ${recipes[i].image} alt=''>
-            <h2> ${recipes[i].name} </h2>
-            <h3> Difficulty: ${recipes[i].difficulty} </h3>
-            <p ><a href="./receta.html?id=${recipes[i].id}">Presione para más detalles</a></p>
+            <h2 class="tituloCategory"> ${recipes[i].name} </h2>
+            <h3 class="dificultadCategory"> Difficulty: ${recipes[i].difficulty} </h3>
+            <p class="parrafoCategory"><a href="./receta.html?id=${recipes[i].id}">Presione para más detalles</a></p>
         </article>
         `
     }
