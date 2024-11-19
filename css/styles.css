@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .elementosFlex {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +20,7 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     width: 95%;
-    height: 80px;
+    height: 90px;
     border-radius: 150px;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -62,7 +66,6 @@ header{
     font-style: normal;
     flex-direction: column;
     align-items: center;
-    width: 75px;
 }
 
 ul {
@@ -107,14 +110,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1454px;
+    width: 100%;
     justify-content: center;
-    height: 120px;
-
-}
-
-.HijoTitulo{
-    height: 120px;
 }
 
 .cargarMas{
@@ -144,7 +141,6 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 700px;
 }
 
 .articleRecetas {
@@ -166,8 +162,6 @@ h1{
     align-content: center;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .padreLoginRegister {
@@ -175,18 +169,20 @@ h1{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    height: 600px;
-
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
-.HijoLoginRegister{
+.HijoLogin {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-self: center;
     align-items: flex-start;
-
+    align-content: center;
+    text-align: center;
+    width: 30%;
 
 }
 
@@ -199,6 +195,7 @@ h1{
     align-items: flex-start;
     align-content: center;
     text-align: center;
+    width: 50%;
 
 }
 
@@ -211,12 +208,8 @@ h1{
     border-radius: 20px;
     border: solid 2px;
     align-self: center;
-    width: 508px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    width: 40%;
+    padding: 20px;
     background-color: rgba(0, 150, 150, 0.377);
     height: 270px;
     justify-content: center;
@@ -232,14 +225,10 @@ h1{
     border-radius: 20px;
     border: solid 2px;
     align-self: center;
-    width: 508px;
-    padding: 10px;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    width: 40%;
+    padding: 30px;
     background-color: rgba(0, 150, 150, 0.377);
-    height: 300px;
+    height: 310px;
     align-self: center;
     justify-content: center;
 
@@ -247,52 +236,48 @@ h1{
 
 .email {
     height: 40px;
-    width: 350px;
     border-radius: 10px;
     margin-bottom: 5px;
     background-color: white;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
-    width: 500px;
+    width: 300%;
 
 }
 
-.emailLogin{
+.emailRegister{
     height: 40px;
-    width: 350px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     background-color: white;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
-    width: 500px;
+    width: 200%;
 
 }
 
 .contra {
     height: 40px;
-    width: 350px;
     border-radius: 10px;
     margin-bottom: 10px;
     background-color: white;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
-    width: 500px;
+    width: 300%;
 }
 
-.contraLogin{
+.contraRegister{
     height: 40px;
-    width: 350px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     background-color: white;
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
-    width: 500px;
+    width: 200%;
 
 }
 
@@ -317,7 +302,7 @@ h1{
 .padreTerminos{
     display: flex;
     flex-direction: row;
-    width: 250px;
+    width: 100%;
     align-items: center;
     margin-top: 10px;
 }
@@ -339,7 +324,7 @@ h1{
 }
 
 .loginBtn{
-    width: 90px;
+    width: 50%;
     height: 30px;
     border-radius: 7px;
     background-color: rgb(6, 151, 255);
@@ -351,7 +336,7 @@ h1{
 }
 
 .registerBtn{
-    width: 90px;
+    width: 50%;
     height: 30px;
     border-radius: 7px;
     background-color: rgb(6, 151, 255);
@@ -371,37 +356,33 @@ h1{
     flex-direction: row;
     justify-content: center;
     justify-content: space-evenly;
-    height: 490px;
+    margin-bottom: 2%;
 }
 
 .HijoDetalleTexto{
-    width: 550px;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     align-items: center;
-    border: 3px;
-    border: black solid;
+    border: 1px, black, solid;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    height: 380px;
     justify-content: center;
     padding: 2%;
     
 }
 
 .HijoDetalleCaja{
-    width: 400px;
-    border: 1px solid;
-    border-color: black;
+    width: 40%;
+    border: 1px, black, solid;
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    height: 490px;
     align-self: center;
     align-content: center;
     justify-content: center;
@@ -416,7 +397,6 @@ h1{
 
 }
 
-
 .searchTags{
     font-family: "Alice", serif;
     font-weight: 400;
@@ -425,7 +405,7 @@ h1{
 }
 
 .tags{
-    width: 400px;
+    width: 100%;
     font-family: "Alice", serif;
     font-weight: 400;
     font-size: 20px;
@@ -434,7 +414,6 @@ h1{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    height: 150px;
 }
 
 .tiempo{
@@ -465,6 +444,8 @@ h3{
     font-weight: 400;
     color: rgb(0, 117, 93);
     margin-top: 10px;
+    text-decoration: none;
+    font-size: smaller;
 
 }
 
@@ -482,6 +463,7 @@ h3{
 
 .imgCat{
     width: 50%;
+    margin-top: 2%;
 }
 
 .searchTags{
@@ -502,7 +484,6 @@ h3{
     border: 1%;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    height: 45%;
     justify-content: center;
     width: 30%;
     margin: 2%;
@@ -553,7 +534,7 @@ h3{
     border-color: black;
     border-radius: 5px;
     background-color: rgba(0, 139, 136, 0.37);
-    width: 400px;
+    width: 30%;
     
 }
 
@@ -624,25 +605,47 @@ footer {
         width: 80%;
     }
 
-    .email, .contra {
+    .email, .contra, .HijoLogin {
+        width: 100%;
+    }
+
+    .HijoLoginRegister {
+        width: 80%;
+    }
+
+    .emailRegister, .contraRegister {
+        width: 130%;
+    }
+
+    .registerBtn {
+        width:50%;
+    }
+
+    .padreTerminos {
         width: 100%;
     }
 
     /* Recetas */
 
-    .articleRecetas {
-        width: 100%;
+    .HijoDetalleCaja {
+        width: 90%;
         justify-items: center;
+        margin-bottom: 5%;
     }
     .tituloRecetas {
         font-size: 30px;
         text-align: center;
     }
 
-    .PadreDetalle {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    .HijoDetalleTexto {
+        width: 90%;
+        justify-items: center;
+    }
+
+    /* Categories */
+
+    .todasCategorias {
+        width: 50%;
     }
 
     /* Category */
