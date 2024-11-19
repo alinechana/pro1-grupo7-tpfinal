@@ -8,6 +8,8 @@ body {
     background-image: url(../img/Flipsnack.jpeg);
     background-image: horizontal;
 }
+
+/* Header */
 .logo{
     display: flex;
     flex-wrap: wrap;
@@ -39,12 +41,6 @@ header{
     background-color: rgb(29, 158, 145);
     
 }
-
-footer {
-    background-color: rgb(29, 158, 145);
-}
-
-
 
 .listaHeader {
     justify-content: space-around;
@@ -78,6 +74,8 @@ ul {
     
 }
 
+/* BODY index */
+
 .artRec {
     margin-top: 1%;
     margin-bottom: 2%;
@@ -104,6 +102,29 @@ h1{
     font-size: 43px;
     
 }
+
+.PadreTitulo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1454px;
+    justify-content: center;
+    height: 120px;
+
+}
+
+.HijoTitulo{
+    height: 120px;
+}
+
+.cargarMas{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8px;
+}
+
+/* detalle recetas */
 
 .detalleReceta {
     display: flex;
@@ -138,35 +159,6 @@ h1{
     font-weight: 400;
     font-style: normal;
 }
-.listaFooter {
-    justify-content: space-evenly;
-    list-style: none;
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.cargarMas{
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-style: normal;
-    padding: 8px;
-}
-
-.PadreTitulo{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 1454px;
-    justify-content: center;
-    height: 120px;
-
-}
-
-.HijoTitulo{
-    height: 120px;
-}
-
 
 /* Login - Register */
 
@@ -380,9 +372,6 @@ h1{
     justify-content: center;
     justify-content: space-evenly;
     height: 490px;
-    
-    
-
 }
 
 .HijoDetalleTexto{
@@ -391,17 +380,16 @@ h1{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    align-self: center;
+    align-items: center;
     border: 3px;
     border: black solid;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     height: 380px;
     justify-content: center;
+    padding: 2%;
     
 }
-
-
 
 .HijoDetalleCaja{
     width: 400px;
@@ -433,8 +421,8 @@ h1{
     font-family: "Alice", serif;
     font-weight: 400;
     font-style: normal;
-}
 
+}
 
 .tags{
     width: 400px;
@@ -500,10 +488,9 @@ h3{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-content: center;
     justify-content: center;
     justify-content: space-around;
-    height: 1000px;
 }
 
 .articleCategory{
@@ -518,7 +505,7 @@ h3{
     height: 45%;
     justify-content: center;
     width: 30%;
-
+    margin: 2%;
 }
 
 .tituloCategory{
@@ -579,7 +566,89 @@ h3{
 
 }
 
+.category {
+    font-family: "Norican", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+}
+
 /* Footer */
 
+.listaFooter {
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
 
+footer {
+    background-color: rgb(29, 158, 145);
+}
 
+/* Responsive */
+
+@media (max-width: 420px) {
+   
+    /* Header */
+
+    .listaHeader {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /*Footer*/
+
+    .textoFooter {
+        font-size: smaller;
+    }
+
+     /* index */
+
+    .tituloIndex {
+        font-size: 30px;
+    }
+
+    .artRec {
+        width: 45%;
+    }
+    
+
+    /*Login y Register*/
+
+    .login, .register {
+        width: 80%;
+    }
+
+    .email, .contra {
+        width: 100%;
+    }
+
+    /* Recetas */
+
+    .articleRecetas {
+        width: 100%;
+        justify-items: center;
+    }
+    .tituloRecetas {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .PadreDetalle {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    /* Category */
+
+    .articleCategory {
+        width: 90%;
+    }
+
+}
