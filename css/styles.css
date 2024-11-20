@@ -171,6 +171,7 @@ h1{
     justify-content: center;
     margin-top: 10%;
     margin-bottom: 10%;
+    height: 350px;
 }
 
 .HijoLogin {
@@ -472,7 +473,7 @@ h3{
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .articleCategory{
@@ -502,6 +503,7 @@ h3{
     color: black;
 
 }
+
 
 .parrafoCategory{
     font-family: "Alice", serif;
@@ -555,6 +557,14 @@ h3{
     text-decoration: none;
 }
 
+
+/* SearchResults */
+
+.tituloResults{
+    text-align: center;
+}
+
+
 /* Footer */
 
 .listaFooter {
@@ -568,7 +578,31 @@ h3{
 
 footer {
     background-color: rgb(29, 158, 145);
+    height: 60px;
+   
 }
+
+navFooter{
+    height: 60px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.listaFooter{
+    height: 60px;
+}
+
+.textoFooter{
+    font-size: 20px;
+}
+
+
+
+
 
 /* Responsive */
 
@@ -580,6 +614,27 @@ footer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navHeader{
+        height: 310px;
+    }
+
+    .listaLogo{
+        margin-bottom: 10px;
+    }
+
+    .buscador{
+        margin-bottom: 10px;
+        width: 190px;
+
+    }
+
+    .barraNav{
+        margin-bottom: 10px;
+        font-size: 21px;
     }
 
     /*Footer*/
@@ -625,6 +680,8 @@ footer {
         width: 100%;
     }
 
+    
+
     /* Recetas */
 
     .HijoDetalleCaja {
@@ -648,6 +705,10 @@ footer {
         width: 50%;
     }
 
+    .mainCategories{
+        height: 3500px;
+    }
+
     /* Category */
 
     .articleCategory {
@@ -655,3 +716,5 @@ footer {
     }
 
 }
+
+

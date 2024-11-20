@@ -7,7 +7,7 @@ login.addEventListener("submit", function(e) {
     if (email.value == "") {
         alert("Por favor complete el campo email")
     }
-    else if (email.value == "") { 
+    else if (contra.value == "") { 
         alert("Por favor complete el campo contraseña")
         
     } else {
