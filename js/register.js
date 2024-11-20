@@ -1,7 +1,7 @@
 let register = document.querySelector(".register");
-let email = document.querySelector(".email");
+let email = document.querySelector(".emailRegister");
 let msjError = document.querySelector(".msjError");
-let contra =document.querySelector(".contra");
+let contra =document.querySelector(".contraRegister");
 
 
 register.addEventListener("submit", function(e) {
