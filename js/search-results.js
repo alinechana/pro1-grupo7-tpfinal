@@ -17,8 +17,7 @@ fetch(URL)
     let recetas = " "
     let resultados = data.recipes
     for (let i = 0; i < resultados.length; i++) {
-        recetas += 1 
-
+        recetas += 
         `<article>
             <img src= ${recipes[i].image} alt=''>
             <p> Receta: ${recipes[i].name}</p>
