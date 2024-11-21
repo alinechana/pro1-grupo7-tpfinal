@@ -72,9 +72,10 @@ ul {
     padding-inline-start: 0px;
 }
 
-.buscador {
-    width: 30%;
-    
+#buscador {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* BODY index */
@@ -628,7 +629,7 @@ navFooter{
 
     .buscador{
         margin-bottom: 10px;
-        width: 190px;
+        width: 30%;
 
     }
 
