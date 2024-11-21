@@ -637,12 +637,6 @@ navFooter{
         font-size: 21px;
     }
 
-    /*Footer*/
-
-    .textoFooter {
-        font-size: smaller;
-    }
-
      /* index */
 
     .tituloIndex {
@@ -680,8 +674,6 @@ navFooter{
         width: 100%;
     }
 
-    
-
     /* Recetas */
 
     .HijoDetalleCaja {
@@ -713,6 +705,16 @@ navFooter{
 
     .articleCategory {
         width: 90%;
+    }
+
+    .tituloCategory {
+        text-align: center;
+    }
+
+    /*Footer*/
+
+    .textoFooter {
+        font-size: 10px;
     }
 
 }
