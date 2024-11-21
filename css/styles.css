@@ -667,7 +667,7 @@ navFooter{
     }
 
     .registerBtn {
-        width:50%;
+        width: 70%;
     }
 
     .padreTerminos {
@@ -689,6 +689,10 @@ navFooter{
     .HijoDetalleTexto {
         width: 90%;
         justify-items: center;
+    }
+
+    .tiempo {
+        text-align: center;
     }
 
     /* Categories */
