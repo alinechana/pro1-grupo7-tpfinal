@@ -2,9 +2,9 @@ let searchResults = document.querySelector(".search-results")
 
 let qs = location.search;
 let qsObj = new URLSearchParams(qs)
-let value = qsObj.get("q")
+let value = qsObj.get("buscador")
 
-const URL = `https://dummyjson.com/recipes/search?q=${value}`
+const URL = `https://dummyjson.com/recipes/search?buscador=${value}`
 
 let buscador = document.querySelector(".buscador")
 
