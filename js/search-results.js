@@ -6,8 +6,6 @@ let value = qsObj.get("buscador")
 let tituloResults = document.querySelector(".tituloResults")
 
 const URL = `https://dummyjson.com/recipes/search?q=${value}`
-tituloResults.innerText = `Resultados de busqueda para: ${value}`
-
 let buscador = document.querySelector(".buscador")
 
 fetch(URL)
@@ -18,15 +16,19 @@ fetch(URL)
 .then(function (data) {
     let recetas = " "
     let resultados = data.recipes
-    for (let i = 0; i < resultados.length; i++) {
-        recetas += 
-        `<article class="articleSearch">
-            <img class="imgSearch" src= ${resultados[i].image} alt=''>
-            <p class="parrafoSearch"> Receta: ${resultados[i].name}</p>
-            <p class="recetasData"><a href="./receta.html?id=${resultados[i].id}">Presione para más detalles</a></p>
-        </article>`
-        
+    if (resultados && resultados.length > 0) {
+        tituloResults.innerText = `Resultados de busqueda para: ${value}`
+        for (let i = 0; i < resultados.length; i++) {
+            recetas += 
+            `<article class="articleSearch">
+                <img class="imgSearch" src= ${resultados[i].image} alt=''>
+                <p class="parrafoSearch"> Receta: ${resultados[i].name}</p>
+                <p class="recetasData"><a href="./receta.html?id=${resultados[i].id}">Presione para más detalles</a></p>
+            </article>`;
     }
+    } else {
+        tituloResults.innerText = `No se encontraron resultados para tu búsqueda: "${value}"`
+    }  
     searchResults.innerHTML = recetas
 })
 .catch( function (error){
