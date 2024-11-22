@@ -168,8 +168,9 @@ h1{
     width: 50%;
     border: solid, rgb(23, 157, 157);
     border-radius: 5px;
-    padding: 2%;
+    margin-top: 10px;
     background-color: white;
+
 }
 
 .sectionRecetas {
@@ -402,8 +403,9 @@ h1{
     flex-direction: column;
     align-items: center;
     align-items: center;
-    border: 1px, black, solid;
-    border-radius: 5px;
+    border: rgb(0, 156, 117) solid;
+    border: 1%;
+    border-radius: 10px;
     background-color: rgb(255, 255, 255);
     justify-content: center;
     padding: 2%;
@@ -412,8 +414,9 @@ h1{
 
 .HijoDetalleCaja{
     width: 40%;
-    border: 1px, black, solid;
-    border-radius: 5px;
+    border: rgb(0, 156, 117) solid;
+    border: 1%;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -500,6 +503,9 @@ h3{
 .imgCat{
     width: 50%;
     margin-top: 2%;
+    margin-top: 10px;
+    border: solid, rgb(23, 157, 157);
+    border-radius: 5px;
 }
 
 .searchTags{
@@ -593,14 +599,7 @@ h3{
 }
 
 
-/* SearchResults */
 
-.tituloResults{
-    text-align: center;
-    font-family: "Alice", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
 
 /* Footer */
@@ -648,15 +647,58 @@ navFooter{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    justify-content: space-evenly;
 
 }
 
 .articleSearch{
-    width: 50%;
-    border: 20px solid;
-    border: rgb(0, 165, 156);
+    width: 30%;
+    border: rgb(0, 156, 117) solid;
+    border: 1%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    align-self: center;
+    margin-bottom: 10px;
 }
 
+.imgSearch{
+    width: 40%;
+    margin-top: 10px;
+    border: solid, rgb(23, 157, 157);
+    border-radius: 5px;
+}
+
+.parrafoSearch{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+
+}
+
+.recetasData{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 15px;
+
+}
+
+
+.tituloResults{
+    font-family: "Norican", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
 
 
 
@@ -788,6 +830,18 @@ navFooter{
     .textoFooter {
         font-size: 10px;
     }
+
+    /*Search*/
+
+    .articleSearch{
+        width: 90%;
+    }
+
+    .tituloResults{
+        font-size: 25px;
+    }
+
+
 
 }
 
