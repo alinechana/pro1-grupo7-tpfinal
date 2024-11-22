@@ -36,18 +36,34 @@ cargarMas.addEventListener("click", function () {
     fetchRecetas(skip)
 })
 
-buscadorNav.addEventListener("focus", function(){
+let buscadorNav = document.querySelector(".buscadorNav"); 
 
-    if (this.value.length < 3) {
-        alert("Debe ingresar una palabra mayor a 3 caracteres");
+buscadorNav.addEventListener("submit", function(event){
+    event.preventDefault()
 
-    }else if (this.value == "") {
-        alert("El campo no puede estar vacío");
+})
 
-    }else{
-        alert(this.value);
+let buscador = document.querySelector("#buscador");
 
-    }
+buscador.addEventListener("keypress", function(event){
+
+    //console.log(event);
+
+    if (event.code == "Enter") {
+
+
+        if (this.value.length < 3) {
+            alert("Debe ingresar una palabra mayor a 3 caracteres");
+
+        }else if (this.value == "") {
+            alert("El campo no puede estar vacío");
+
+        }else{
+            buscadorNav.submit();
+        }
+        
+    } 
+    
 
 })
 
