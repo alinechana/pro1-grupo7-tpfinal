@@ -48,7 +48,6 @@ let buscador = document.querySelector("#buscador");
 
 buscador.addEventListener("keypress", function(event){
 
-    //console.log(event);
 
     if (event.code == "Enter") {
 

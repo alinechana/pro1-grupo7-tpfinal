@@ -34,8 +34,3 @@ fetch(URL)
 .catch( function (error){
     return console.log(error);
 })
-
-
-
-
-
