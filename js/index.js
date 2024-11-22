@@ -3,7 +3,7 @@ let rec = document.querySelector(".rec");
 let cargarMas = document.querySelector(".cargarMas");
 
 function fetchRecetas(skip){
-    let url = `https://dummyjson.com/recipes?limit=10&skip=${skip}&select=name,image`;
+    let url = `https://dummyjson.com/recipes?limit=10&skip=${skip}`;
     
     fetch(url)
     .then(function (response) {
@@ -17,6 +17,7 @@ function fetchRecetas(skip){
             `<article class="artRec , elementosFlex">
                 <img class="imagenRec" src= ${recetas[i].image} alt=''>
                 <h2 class="recetasData"> ${recetas[i].name} </h2>
+                <h4 class="recetasData"> Dificultad: ${recetas[i].difficulty} </h4>
                 <p class="recetasData"><a href="./receta.html?id=${recetas[i].id}">Presione para más detalles</a></p>
             </article>
             `
