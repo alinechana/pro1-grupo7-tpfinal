@@ -53,11 +53,11 @@ buscador.addEventListener("keypress", function(event){
     if (event.code == "Enter") {
 
 
-        if (this.value.length < 3) {
-            alert("Debe ingresar una palabra mayor a 3 caracteres");
-
-        }else if (this.value == "") {
+        if (this.value == "") {
             alert("El campo no puede estar vacío");
+
+        }else if (this.value.length < 3) {
+            alert("Debe ingresar una palabra mayor a 3 caracteres");
 
         }else{
             buscadorNav.submit();
@@ -71,11 +71,11 @@ buscador.addEventListener("keypress", function(event){
 let btnNav = document.querySelector(".btnNav");
 btnNav.addEventListener("click", function () {
 
-    if (this.value.length < 3) {
-        alert("Debe ingresar una palabra mayor a 3 caracteres");
-
-    }else if (this.value == "") {
+    if (buscador.value == "") {
         alert("El campo no puede estar vacío");
+
+    }else if (buscador.value.length < 3) {
+        alert("Debe ingresar una palabra mayor a 3 caracteres");
 
     }else{
         buscadorNav.submit();
