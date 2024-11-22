@@ -97,6 +97,8 @@ ul {
     background-color: white;
     border: solid 0.5px;
     border: rgb(193, 190, 190);
+    border-color: black;
+    border: solid 0.5px;
 
 }
 
@@ -635,6 +637,29 @@ navFooter{
 .textoFooter{
     font-size: 15px;
 }
+
+/* Search Results */
+
+.searchResults{
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.articleSearch{
+    width: 50%;
+    border: 20px solid;
+    border: rgb(0, 165, 156);
+}
+
+
+
+
 
 
 
