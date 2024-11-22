@@ -596,6 +596,9 @@ h3{
 
 .tituloResults{
     text-align: center;
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
