@@ -22,7 +22,7 @@ fetch(URL)
         recetas += 
         `<article class="articleSearch">
             <img src= ${resultados[i].image} alt=''>
-            <p> Receta: ${resultados[i].name}</p>
+            <p class="parrafoSearch"> Receta: ${resultados[i].name}</p>
             <p class="recetasData"><a href="./receta.html?id=${resultados[i].id}">Presione para más detalles</a></p>
         </article>`
         
