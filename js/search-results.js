@@ -1,4 +1,4 @@
-let searchResults = document.querySelector(".searchResults")
+let searchResults = document.querySelector(".search-results")
 
 let qs = location.search;
 let qsObj = new URLSearchParams(qs)
@@ -20,7 +20,7 @@ fetch(URL)
     let resultados = data.recipes
     for (let i = 0; i < resultados.length; i++) {
         recetas += 
-        `<article class="articleSearch">
+        `<article>
             <img src= ${resultados[i].image} alt=''>
             <p> Receta: ${resultados[i].name}</p>
             <p class="recetasData"><a href="./receta.html?id=${resultados[i].id}">Presione para más detalles</a></p>
