@@ -19,9 +19,9 @@ fetch(URL)
     for (let i = 0; i < resultados.length; i++) {
         recetas += 
         `<article>
-            <img src= ${recipes[i].image} alt=''>
-            <p> Receta: ${recipes[i].name}</p>
-            <p> Link: ${recipes[i].instructions} </p>
+            <img src= ${resultados[i].image} alt=''>
+            <p> Receta: ${resultados[i].name}</p>
+            <p class="recetasData"><a href="./receta.html?id=${resultados[i].id}">Presione para más detalles</a></p>
         </article>`
         
     }
