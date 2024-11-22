@@ -65,20 +65,21 @@ buscador.addEventListener("keypress", function(event){
         
     } 
     
+
 })
 
 let btnNav = document.querySelector(".btnNav");
-btnNav.addEventListener("click", function(){
+btnNav.addEventListener("click", function () {
 
-    if (buscador.value.length < 3) {
+    if (this.value.length < 3) {
         alert("Debe ingresar una palabra mayor a 3 caracteres");
 
-    }else if (buscador.value == "") {
+    }else if (this.value == "") {
         alert("El campo no puede estar vacío");
 
     }else{
         buscadorNav.submit();
     }
-        
+    
 })
 
