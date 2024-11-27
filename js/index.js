@@ -81,4 +81,3 @@ btnNav.addEventListener("click", function () {
     }
     
 })
-
